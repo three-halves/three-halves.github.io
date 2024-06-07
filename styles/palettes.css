@@ -1,0 +1,55 @@
+[data-theme="default"] {
+    --main-color: #415771; 
+    --alt-color: #273c54;
+    --body-color: #0e2339;
+    --text-color: #eeeeee;
+    --link-color: #c7e1ff;
+    --card-color: #000c1d;
+    --card-text-color: #eeeeee;
+    --img-color-filter: brightness(0) saturate(100%) invert(97%) sepia(1%) saturate(5040%) hue-rotate(181deg) brightness(123%) contrast(87%);
+}
+
+[data-theme="light"] {
+    --main-color: #f2e9e6; 
+    --alt-color: #d7cfcc;
+    --body-color: #fff6f3;
+    --text-color: #3b2923;
+    --link-color: #4d332b;
+    --card-color: #f2e9e6;
+    --card-text-color: #3b2923;
+    --img-color-filter: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(3956%) hue-rotate(329deg) brightness(92%) contrast(79%);
+}
+
+[data-theme="dark"] {
+    --main-color: #1f1f1f; 
+    --alt-color: #2a2a2a;
+    --body-color: #131313;
+    --text-color: #e4e4e4;
+    --link-color: #d9d9e9;
+    --card-color: #202020;
+    --card-text-color: #e4e4e4;
+    --img-color-filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(2132%) hue-rotate(192deg) brightness(117%) contrast(79%);
+}
+
+[data-theme="red"] {
+    --main-color: #c7383b; 
+    --alt-color: #a4091e;
+    --body-color: #71000f;
+    --text-color: #f7d8ca;
+    --link-color: #ffb593;
+    --card-color: #5f000c;
+    --card-text-color: #f7d8ca;
+    --img-color-filter: brightness(0) saturate(100%) invert(89%) sepia(10%) saturate(691%) hue-rotate(327deg) brightness(99%) contrast(95%);
+}
+
+[data-theme="elflord"] {
+    --main-color: #191919; 
+    --alt-color: #000000;
+    --body-color: #000000;
+    --text-color: #00F000;
+    --link-color: #00F0F0;
+    --card-color: #0a3030;
+    --card-text-color: #00F000;
+    --img-color-filter: brightness(0) saturate(100%) invert(47%) sepia(96%) saturate(1637%) hue-rotate(84deg) brightness(113%) contrast(125%);
+}
+
