@@ -96,7 +96,7 @@ body {
 }
 
 .page-content hr {
-    margin: 0% 15%;
+    margin: 0% 15% 1% 15%;
     width: 50%;
     border: 2px solid var(--alt-color);
     border-radius: 10px;
