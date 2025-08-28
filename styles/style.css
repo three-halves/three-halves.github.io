@@ -96,17 +96,24 @@ body {
     text-decoration: underline;
 }
 
-.current {
+.section-link:target {
     background-color: var(--main-color);
 }
 
-.page-content p {
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: block;
+}
+
+.tab-content p {
     font-size: 1.5rem;
     margin: 50px 15%;
     color: var(--text-color);
 }
 
-.page-content hr {
+.tab-content hr {
     margin: 0% 15% 1% 15%;
     width: 50%;
     border: 2px solid var(--alt-color);

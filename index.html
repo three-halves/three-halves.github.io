@@ -6,6 +6,7 @@
     <title>Morgan Johnson - Introduction</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/palettes.css">
+    <link rel="stylesheet" href="styles/project-card.css">
     <script src="palettize.js"></script>
 
 </head>
@@ -33,19 +34,94 @@
     </div>
 
     <div class="section-container">
-        <a href="index.html" class="section-link current">Introduction</a>
-        <a href="projects.html" class="section-link">Projects</a>
-        <a href="contact.html" class="section-link">Contact</a>
+        <a href="#intro" class="section-link" >Introduction</a>
+        <a href="#projects" class="section-link" >Projects</a>
+        <a href="#contact" class="section-link" >Contact</a>
         
     </div>
 
-    <div class="page-content">
-        <p>
-            Hi, I'm Morgan Johnson. I'm a student at Missouri University of Science and Technology studying Computer Science. 
-            I do a lot of game dev in my spare time and have published and released a few games, most of which you can find under the Projects tab. 
-            I'm also working on my skills in web dev and graphics programming.
-        </p>
-        <hr>
+    <div class="tab-folder">
+        <div id="projects" class="tab-content">
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/manacycle.png">
+                    <p><b>Mana Cycle</b><br><br>A puzzle-party game built with Unity. I worked on this game along with InfinityJKA and Jackachulian. My work on this project largely consists of programming, UI, and sound design. This game is still in development with future updates being worked on.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/infinityJKA/Mana-Cycle" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                        <a href="https://infinityjka.itch.io/mana-cycle" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                        <a href="https://store.steampowered.com/app/2864390/Mana_Cycle/" target="_blank"><img class="link" src="assets/steam-white.png"></a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/basestationudp.png">
+                    <p><b>BaseStation UDP Camera System</b><br><br>A project I worked during my freshman year at MST for the Mars Rover Design Team. It uses Rasberry Pi microcontrollers on the rover to stream camera data over UDP, allowing it to be rendered in an Electron app in on a remote computer.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/MissouriMRDT/BaseStation_Software/tree/new-camera-controls" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/morpho.png">
+                    <p><b>Morpho Builder</b><br><br>A 3D puzzle-platformer I built with Unity along with InfinityJKA and Jackachulian for the GMTK 2024 Game Jam. My work on this project consists primarily of the player controller and UI.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/jackachulian/GMTK2024" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                        <a href="https://infinityjka.itch.io/gmtk2024" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                    </div>   
+                </div>
+    
+                <div class="card">
+                    <img src="assets/qbattlescreenshot.png">
+                    <p><b>qBattle</b><br><br>A multiplayer game I developed solo using Unity. I made it during my first semester at MST over the course of 1 week for a game jam held their ACM chapter.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/three-halves/MSTGameJam1" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                        <a href="https://threehalves.itch.io/qbattle" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                    </div>   
+                </div>
+    
+                <div class="card">
+                    <img src="assets/scrimscreenshot.png">
+                    <p><b>SCRIMBLO'S BULLET HELL</b><br><br>A game I developed solo during my second semester at MST, over the course of 1 week for a game jam held their ACM chapter.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/three-halves/MSTGameJam2" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                        <a href="https://threehalves.itch.io/rave" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/slayyourselfscreenshot.png">
+                    <p><b>SLAY YOURSELF</b><br><br>A game I developed with InfinityJKA and Jackachulian for the GMTK 2023 Game Jam. My work on this project consists of programming, UI and sound design.</p>
+                    <div class="link-container">
+                        <a href="https://github.com/jackachulian/GMTKGameJam2023" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+                        <a href="https://infinityjka.itch.io/slay-yourself" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="assets/zgamescreenshot.png">
+                    <p><b>zGame</b><br><br>A short platformer game made in Python, developed solo. The first standalone game I've fully released, playable both as a desktop application and on the web.</p>
+                    <div class="link-container">
+                        <a href="https://threehalves.itch.io/zgame" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
+                    </div>
+                </div>
+    
+                <hr>
+            </div>
+        </div>
+        <div id="contact" class="tab-content">
+                <p>
+                    Email: morgan.j.johnson@protonmail.com <button onclick="navigator.clipboard.writeText('morgan.j.johnson@protonmail.com')">Copy</button>
+                </p>
+                <hr>
+        </div>
+        <div id="intro" class="tab-content">
+            <p>
+                Hi, I'm Morgan Johnson. I'm a student at Missouri University of Science and Technology studying Computer Science. 
+                I do a lot of game dev in my spare time and have published and released a few games, most of which you can find under the Projects tab. 
+                I'm also working on my skills in web dev and graphics programming.
+            </p>
+            <hr>
+        </div>
     </div>
 
 </body>
