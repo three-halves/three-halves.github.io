@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     input.onchange = function () {
         localStorage['palette'] = this.value; // change on selector change
         palettize(this.value);
-     }
+    }
+
+    // unhide palette selector if JS is running
+    document.getElementById('palette-selector').style.visibility = "visible";
 
 });
 

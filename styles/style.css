@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
 img {
@@ -18,69 +17,19 @@ img {
     --card-color: #000c1d;
     --card-text-color: #eeeeee;
     --img-color-filter: brightness(0) saturate(100%) invert(97%) sepia(1%) saturate(5040%) hue-rotate(181deg) brightness(123%) contrast(87%);
+
+    --sidebar-width: calc(max(20%, 250px));
 }
 
 body {
     background-color: var(--body-color);
 }
 
-.header {
-    background-color: var(--main-color);
-    min-height: 200px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.header .pfp {
-    border-radius: 50%;
-    margin: 25px 25px;
-    min-width: 200px;
-    width:10%;
-
-}
-
-.name-link-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.header .nametag {
-    width: auto;
-    align-self: center;
-    margin: 0px 25px;
-    font-size: 3rem;
-    color: var(--text-color);
-    letter-spacing: 1.5px;
-}
-
-.header .link-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.header .link {
-    width: 75px;
-    height: auto;
-    margin: 15px 15px;
-    filter: var(--img-color-filter);
-}
-
-.header .link:hover {
-    transform:scale(1.1);
-    transition: 200ms;
-}
-
 .section-container {
     background-color: var(--alt-color);
     min-height: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -89,7 +38,8 @@ body {
     padding: 5px 15px;
     color: var(--link-color);
     text-decoration: none;
-    width: 200px;
+    text-align: right;
+    width: auto;
 }
 
 .section-link:hover {
@@ -107,9 +57,22 @@ body {
     display: block;
 }
 
+.tab-content {
+    position: absolute;
+    margin-left: var(--sidebar-width);
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    min-width: var(--sidebar-width);
+    max-width: 800px;
+    overflow: scroll;
+    justify-self: center;
+}
+
 .tab-content p {
-    font-size: 1.5rem;
-    margin: 50px 15%;
+    font-size: 1.1rem;
+    margin: 50px 2%;
     color: var(--text-color);
 }
 

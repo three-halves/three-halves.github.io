@@ -7,41 +7,38 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/palettes.css">
     <link rel="stylesheet" href="styles/project-card.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <script src="palettize.js"></script>
 
 </head>
 <body>
-    <div class="header">
-
-        <label for="palette"></label>
-        <select name="palette" id="palette-selector">
+    <label for="palette"></label>
+    <select name="palette" id="palette-selector" style="visibility: hidden;">
         <option value="default">default</option>
         <option value="light">light</option>
         <option value="dark">dark</option>
         <option value="red">red</option>
         <option value="elflord">elflord</option>
-        </select>
+    </select>
+    <div class="sidebar">
 
-        <img class="pfp" src="assets/portrait.jpg">
-        <div class="name-link-container">
-            <p class="nametag">Morgan Johnson</p>
-            <div class="link-container">
-                <a href="https://github.com/three-halves" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
-                <a href="https://www.linkedin.com/in/morgan-jj-johnson" target="_blank"><img class="link" src="assets/linkedin.png"></a>
-                <a href="https://threehalves.itch.io/" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
-            </div>
+        <!-- <img class="pfp" src="assets/portrait.jpg"> -->
+        <p class="nametag">Morgan Johnson</p>
+        <div class="section-container">
+            <a href="#intro" class="section-link" >Introduction</a>
+            <a href="#projects" class="section-link" >Projects</a>
+            <a href="#contact" class="section-link" >Contact</a>
+        </div>
+        <div class="link-container">
+            <a href="https://github.com/three-halves" target="_blank"><img class="link" src="assets/github-mark-white.svg"></a>
+            <a href="https://www.linkedin.com/in/morgan-jj-johnson" target="_blank"><img class="link" src="assets/linkedin.png"></a>
+            <a href="https://threehalves.itch.io/" target="_blank"><img class="link" src="assets/itchio-textless-white.svg"></a>
         </div>
     </div>
 
-    <div class="section-container">
-        <a href="#intro" class="section-link" >Introduction</a>
-        <a href="#projects" class="section-link" >Projects</a>
-        <a href="#contact" class="section-link" >Contact</a>
-        
-    </div>
 
     <div class="tab-folder">
-        <div id="projects" class="tab-content">
+        <div id="projects" class="tab-content" style="max-width: 100%;">
             <div class="card-container">
                 <div class="card">
                     <img src="assets/manacycle.png">
