@@ -65,7 +65,7 @@ body {
     bottom: 0px;
     right: 0px;
     min-width: var(--sidebar-width);
-    max-width: 800px;
+    width: 800px;
     overflow: scroll;
     justify-self: center;
 }
