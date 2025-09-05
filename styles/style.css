@@ -18,36 +18,11 @@ img {
     --card-text-color: #eeeeee;
     --img-color-filter: brightness(0) saturate(100%) invert(97%) sepia(1%) saturate(5040%) hue-rotate(181deg) brightness(123%) contrast(87%);
 
-    --sidebar-width: calc(max(20%, 250px));
+    --sidebar-width: calc(max(20vw, 250px));
 }
 
 body {
     background-color: var(--body-color);
-}
-
-.section-container {
-    background-color: var(--alt-color);
-    min-height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section-link {
-    font-size: 1.75rem;
-    padding: 5px 15px;
-    color: var(--link-color);
-    text-decoration: none;
-    text-align: right;
-    width: auto;
-}
-
-.section-link:hover {
-    text-decoration: underline;
-}
-
-.section-link:target {
-    background-color: var(--main-color);
 }
 
 .tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {

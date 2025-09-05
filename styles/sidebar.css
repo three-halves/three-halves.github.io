@@ -49,3 +49,34 @@
     transform:scale(1.1);
     transition: 200ms;
 }
+
+.section-container {
+    /* background-color: var(---color); */
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.section-link {
+    box-sizing: border-box;
+    font-size: 1.75rem;
+    padding: 5px 15px;
+    color: var(--link-color);
+    background-color: var(--alt-color);
+    text-decoration: none;
+    text-align: right;
+    width: var(--sidebar-width);
+    position: relative;
+    transition: width 200ms;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+    width: calc(var(--sidebar-width) + 1rem);
+}
+
+.section-link:target {
+    background-color: var(--main-color);
+}
