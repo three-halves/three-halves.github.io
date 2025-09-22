@@ -73,6 +73,10 @@
     filter: var(--img-color-filter);
 }
 
+.card .date {
+    font-size: 1rem;
+}
+
 .card .link:hover {
     transform:scale(1.1);
     transition: 200ms;
