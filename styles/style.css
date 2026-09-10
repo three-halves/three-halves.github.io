@@ -9,14 +9,14 @@ img {
 }
 
 :root {
-    --main-color: #415771; 
-    --alt-color: #273c54;
-    --body-color: #0e2339;
-    --text-color: #eeeeee;
-    --link-color: #c7e1ff;
-    --card-color: #000c1d;
-    --card-text-color: #eeeeee;
-    --img-color-filter: brightness(0) saturate(100%) invert(97%) sepia(1%) saturate(5040%) hue-rotate(181deg) brightness(123%) contrast(87%);
+    --main-color: #f2e9e6; 
+    --alt-color: #d7cfcc;
+    --body-color: #fff6f3;
+    --text-color: #3b2923;
+    --link-color: #4d332b;
+    --card-color: #f2e9e6;
+    --card-text-color: #3b2923;
+    --img-color-filter: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(3956%) hue-rotate(329deg) brightness(92%) contrast(79%);
 
     --sidebar-width: calc(max(20vw, 250px));
 }
