@@ -3,9 +3,8 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 50px 5%;
+    justify-content: left;
+    gap: 1.5rem;
 }
 
 .card {

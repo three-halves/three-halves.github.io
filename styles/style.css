@@ -18,46 +18,38 @@ img {
     --card-text-color: #3b2923;
     --img-color-filter: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(3956%) hue-rotate(329deg) brightness(92%) contrast(79%);
 
-    --sidebar-width: calc(max(20vw, 250px));
+    --sidebar-width: calc(max(11vw, 250px));
     --sidebar-spacing: calc(2%);
 }
 
 body {
     background-color: var(--body-color);
-}
-
-.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
-    display: none;
-}
-.tab-folder > :last-child, .tab-folder > .tab-content:target {
-    display: block;
+    margin: auto;
 }
 
 .tab-content {
     position: absolute;
-    margin-left: calc(var(--sidebar-width) + var(--sidebar-spacing));
+    margin-left: calc(var(--sidebar-width) + var(--sidebar-spacing) + var(--sidebar-spacing));
     left: 0px;
     top: 0px;
     bottom: 0px;
     right: 0px;
+    max-width: max-content;
     min-width: var(--sidebar-width);
-    overflow: scroll;
+    overflow-y: scroll;
     justify-self: center;
 }
 
 .tab-content p {
     font-size: 1.1rem;
-    margin: auto;
     color: var(--text-color);
     width: 800px;
 }
 
 .tab-content hr {
-    margin-inline: auto;
     margin-block: 1.5rem;
     width: 50%;
-    border: 2px solid var(--alt-color);
-    border-radius: 10px;
+    border: 2px solid var(--alt-color);    
 }
 
 #palette-selector {
