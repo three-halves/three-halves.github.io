@@ -19,6 +19,7 @@ img {
     --img-color-filter: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(3956%) hue-rotate(329deg) brightness(92%) contrast(79%);
 
     --sidebar-width: calc(max(20vw, 250px));
+    --sidebar-spacing: calc(2%);
 }
 
 body {
@@ -34,25 +35,26 @@ body {
 
 .tab-content {
     position: absolute;
-    margin-left: var(--sidebar-width);
+    margin-left: calc(var(--sidebar-width) + var(--sidebar-spacing));
     left: 0px;
     top: 0px;
     bottom: 0px;
     right: 0px;
     min-width: var(--sidebar-width);
-    width: 800px;
     overflow: scroll;
     justify-self: center;
 }
 
 .tab-content p {
     font-size: 1.1rem;
-    margin: 50px 2%;
+    margin: auto;
     color: var(--text-color);
+    width: 800px;
 }
 
 .tab-content hr {
-    margin: 0% 15% 1% 15%;
+    margin-inline: auto;
+    margin-block: 1.5rem;
     width: 50%;
     border: 2px solid var(--alt-color);
     border-radius: 10px;
