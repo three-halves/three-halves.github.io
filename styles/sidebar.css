@@ -44,6 +44,12 @@
     filter: var(--img-color-filter);
 }
 
+.sidebar .link:hover {
+    transform:scale(1.1);
+    transition: 200ms;
+}
+
+
 .sidebar::after {
     content: "";
     mask-image: url("../assets/tabimage.png");
