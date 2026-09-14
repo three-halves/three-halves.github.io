@@ -52,7 +52,7 @@
 
 .sidebar::after {
     content: "";
-    mask-image: url("../assets/tabimage.png");
+    mask-image: url("../assets/tabImage.png");
     /* mask-position: 0; */
     mask-repeat: no-repeat;
     mask-position: top right;
