@@ -19,8 +19,12 @@
 
 @media only screen and (max-width: 768px) {
     .card {
-      min-width: 100%;
+      width: 100%;
       height: 700px;
+    }
+
+    .card-container {
+        justify-content: center;
     }
 }
 

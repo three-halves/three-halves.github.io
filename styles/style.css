@@ -20,6 +20,31 @@ img {
 
     --sidebar-width: calc(max(11vw, 250px));
     --sidebar-spacing: calc(2%);
+
+    /* used on mobile */
+    --sidebar-height: max(10%, 150px);
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+      --sidebar-spacing: 0;
+      --sidebar-width: 0;
+    }
+
+    .tab-content {
+        margin-inline: 0;
+        justify-content: center;
+        height: calc(100% - var(--sidebar-height));
+        bottom:auto;
+    }
+
+    .tab-content hr {
+        margin-inline: auto;
+    }
+
+    .tab-content p {
+        margin-inline: 0.75rem;
+    }
 }
 
 body {
@@ -43,7 +68,7 @@ body {
 .tab-content p {
     font-size: 1.1rem;
     color: var(--text-color);
-    width: 800px;
+    max-width: 800px;
 }
 
 .tab-content hr {
